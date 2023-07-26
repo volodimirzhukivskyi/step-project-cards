@@ -1,0 +1,34 @@
+{
+  "name": "step-project-cards",
+  "version": "1.0.0",
+  "description": "Dmytro Zyakun || Roman Kalychak || Volodimir Zhukivskyi",
+  "main": "scripts/index.js",
+  "scripts": {
+    "dev": "parcel index.html",
+    "pro": "parcel build index.html --public-url /step-project-cards/",
+    "build": "parcel build index.html",
+    "buildDist": "parcel build dist",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volodimirzhukivskyi/step-project-cards.issue"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/volodimirzhukivskyi/step-project-cards"
+  },
+  "homepage": "https://github.com/volodimirzhukivskyi/step-project-cards",
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-clean-easy": "^1.0.2"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "dependencies": {
+    "modules": "^0.4.0"
+  }
+}
