@@ -27,4 +27,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{"../../function/api/API":"irpM","../../function/api/checkFetchData":"ZPr5","../models/Input":"SCve","../models/Select":"MiZ7","./ClassModal":"aklj","./Form":"GEkJ","./getVisitsFromServer":"POfj","./sendDataFormOnServer":"xeEs"}],"g2Hq":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.arrayVisitsView=void 0,exports.elementDeleteINArray=t;var e=require("../clasess/modules/Layout");(0,e.init)();let r=[];function t(e,r){for(let t=e.length-1;t>=0;t--)if(e[t].id===r){e.splice(t,1);break}}exports.arrayVisitsView=r;
 },{"../clasess/modules/Layout":"pWYy"}]},{},["g2Hq"], null)
-//# sourceMappingURL=/scripts.afd4d619.js.map
+//# sourceMappingURL=/step-project-cards/scripts.afd4d619.js.map
