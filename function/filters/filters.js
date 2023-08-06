@@ -46,7 +46,7 @@ function visitLayout(filterArray) {
 
   // Фильтр
   const filter = document.getElementById("filtersHeader");
-  filter.addEventListener("input", statusGoods);
+  filter.addEventListener("change", statusGoods);
   outputGoods(filterArray); // запуск функции для начального отображения
 
   function statusGoods() {
@@ -74,9 +74,9 @@ function visitLayout(filterArray) {
           (status === "All" || // фильтр по статусу
             (new Date(n.date).getTime() < currentDate && status === "done") ||
             (new Date(n.date).getTime() > currentDate && status === "open")) && // фильтр по вводу текста
-          (n.doctor.toLowerCase().includes(search) ||
-            n.description.toLowerCase().includes(search) ||
-            n.fullName.toLowerCase().includes(search))
+          (n.doctor?.toLowerCase().includes(search) ||
+            n.description?.toLowerCase().includes(search) ||
+            n.fullName?.toLowerCase().includes(search))
       )
     );
   }
