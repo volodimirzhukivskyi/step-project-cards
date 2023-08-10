@@ -37,7 +37,16 @@ li {
   cursor: url(../images/cursor-1.png), auto !important;
   transition: box-shadow 0.2s linear;
 }
-
+.registrationBtn{
+  grid-column: 2;
+  justify-self: end;
+  height: 50px;
+  min-width: 150px;
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
 .btn-exit:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
   color: #9fd3cc;

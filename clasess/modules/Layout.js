@@ -9,9 +9,10 @@ import { cardObjCreate } from "./sendDataFormOnServer";
 
 export const init = () => {
   const buttonEnter = document.querySelector("#button-enter");
+  const buttonRegister = document.querySelector("#registration-btn");
   if (localStorage.getItem("token")) {
     buttonEnter.remove();
-
+    buttonRegister.remove();
     newForm();
     getVisits();
   } else {
@@ -36,9 +37,13 @@ export function responseEnter() {
   const email = document.querySelector('[name="email"]');
   const password = document.querySelector('[name="password"]');
   submit.addEventListener("click", () => {
+    const eValue =email.value;
+    const pValue =password.value;
+
+    if(!eValue||!pValue)alert("Заполните все поля")
     API.auth({
-      email: email.value,
-      password: password.value,
+      email: eValue,
+      password: pValue,
     })
       .then((res) => {
         return checkFetchData(res);
@@ -49,7 +54,7 @@ export function responseEnter() {
         modal.click();
         init();
       })
-      .catch((e) => checkFetchData(e));
+      .catch((e) => alert(e.message));
   });
 }
 
